@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Haube — Rain protection for Leica M</title>
+  <meta name="description" content="Documenting the journey to design a dedicated rain cover for Leica M rangefinders — from sketches to prototypes to field tests." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { nearblack: '#1a1a1a', fog: '#ffffff', ash: '#2a2a2a' },
+          fontFamily: { display: ['Playfair Display', 'serif'], sans: ['Inter','ui-sans-serif','system-ui','Segoe UI','Helvetica','Arial'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-nearblack text-fog font-sans">
+
+  <!-- Header / Logo -->
+  <header class="w-full">
+    <div class="mx-auto max-w-6xl px-4 py-8 sm:pb-16 md:pb-16">
+      <h1 class="text-center font-display italic font-semibold text-5xl sm:text-6xl md:text-7xl tracking-tight">
+        Haube
+      </h1>
+    </div>
+  </header>
+
+  <!-- Intro + CTA -->
+  <main>
+    <section class="mx-auto max-w-3xl px-4 py-14 sm:py-16 md:py-20">
+      <p class="text-center text-base/7 md:text-lg/8 text-white/85">
+        Leica rangefinders are tough — but not weather-sealed. I’m building a minimal, Leica-worthy rain cover,
+        starting with a hot-shoe anchored top-plate shield, and documenting the whole process from first sketch
+        to rainy-street field tests.
+      </p>
+
+      <div class="mt-8 flex justify-center">
+        <a href="https://instagram.com/your-handle" target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center rounded-lg bg-white text-nearblack px-6 py-3 text-sm font-medium hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/30">
+          Follow the journey
+        </a>
+      </div>
+    </section>
+
+  <!-- <footer class="border-t border-ash/60">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-white/70 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p>© <span id="y"></span> Haube</p>
+      <div class="flex items-center gap-4">
+        <a class="hover:opacity-80" href="mailto:hello@haube.design">hello@haube.design</a>
+        <a class="hover:opacity-80" href="https://instagram.com/your-handle" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer> -->
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
